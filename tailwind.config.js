@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/**/*.{html,jsx,mdx,js}"],
+  content: ["./src/**/**/*.{html,jsx,mdx,js,ts,tsx}"],
   theme: {
     fontFamily: {
       main: ['"Noto Sans JP"', "sans-serif"],

@@ -18,4 +18,14 @@ module.exports = {
     builder: "@storybook/builder-webpack5",
   },
   staticDirs: ["../src/images"],
+  typescript: {
+    check: false,
+    checkOptions: {},
+    reactDocgen: "react-docgen-typescript",
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) =>
+        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
+    },
+  },
 };
